@@ -1,56 +1,53 @@
-# Hosting a Full-Stack Application
+# Udagram App
 This project has been developed to host a full stack web application. Deployed and hosted with AWS. Frontend developed with Angular JS. Backend developed with Express JS. 
-Check Full Documentation of this project. 
 
-### Dependencies
 
+[![CircleCI](https://circleci.com/gh/mostafamaa1/fullstack-hosting-app/tree/master.svg?style=svg)](https://circleci.com/gh/mostafamaa1/fullstack-hosting-app/?branch=master)
+
+## Project Setup and Installation
+1- Clone the project at `https://github.com/mostafamaa1/fullstack-hosting-app.git` 
+
+2- Create an `.env` file in the `udagram-api` folder and define the followng variables:
 ```
-- Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
-
-- npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
-
-- AWS CLI v2, v1 can work but was not tested for this project
-
-- A RDS database running Postgres.
-
-- A S3 bucket for hosting uploaded pictures.
-
+- POSTGRES_USERNAME
+- POSTGRES_PASSWORD
+- POSTGRES_PORT
+- POSTGRES_HOST
+- POSTGRES_DB
+- PORT
+- AWS_BUCKET
+- AWS_DEFAULT_REGION=us-east-1
+- AWS_PROFILE
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- JWT_SECRET
+- URL
+```
+3- In the root of the project open two terminals and run the following:
+```bash
+# Frontend
+npm run frontend:install
+npm run frontend:start
 ```
 
-### Installation
-
-Provision the necessary AWS services needed for running the application:
-
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
-
-## Testing
-
-This project contains two different test suite: unit tests and End-To-End tests(e2e). Follow these steps to run the tests.
-
-1. `cd starter/udagram-frontend`
-1. `npm run test`
-1. `npm run e2e`
-
-There are no Unit test on the back-end
-
-### Unit Tests:
-
-Unit tests are using the Jasmine Framework.
-
-### End to End Tests:
-
-The e2e tests are using Protractor and Jasmine.
+```bash
+# Backend
+npm run api:install
+npm run api:start
+```
 
 ## Built With
 
 - [Angular](https://angular.io/) - Single Page Application Framework
-- [Node](https://nodejs.org) - Javascript Runtime
+- [NodeJS](https://nodejs.org) - Javascript Runtime
 - [Express](https://expressjs.com/) - Javascript API Framework
 
-## License
+## Documentation
+* Detailed Documentation (Infrastructure, App dependencies, Pipeline process) is provided in ./documentation/README.md
+* Screenshots of the AWS configurations and the CircleCI are provided in ./documentation/screenshots/
+* Architecture Diagrams of the AWS and the Pipeline are provided in ./documentation/diagrams/
 
-[License](LICENSE.txt)
+## CopyRights
+-> The Code base of this project has been supplied from Udacity as a final project of Fullstack-web-development program.
+
+-> Developed by Mostafa Ahmed
