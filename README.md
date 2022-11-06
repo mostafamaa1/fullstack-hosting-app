@@ -4,6 +4,12 @@ This project has been developed to host a full stack web application. Deployed a
 
 [![CircleCI](https://circleci.com/gh/mostafamaa1/fullstack-hosting-app/tree/master.svg?style=svg)](https://circleci.com/gh/mostafamaa1/fullstack-hosting-app/?branch=master)
 
+## Project endpoints
+
+* > <a href="http://my-udagram-app1.s3-website-us-east-1.amazonaws.com/">Frontend</a>
+
+* > <a href="http://udagram-api-dev.eba-chkjrke3.us-east-1.elasticbeanstalk.com">API</a>
+
 ## Project Setup and Installation
 1- Clone the project at `https://github.com/mostafamaa1/fullstack-hosting-app.git` 
 
