@@ -46,7 +46,7 @@ When the code changes is being commite and synced with version control circleci 
 * Lint Frontend.
 * Build Frontend.
 * Build Api.
-- > Hold (Wait For Manual approval to deploy) 
+- > Hold (Manual approval to deploy) 
 
 #### Deploy:
 * Install AWS CLI v2.
