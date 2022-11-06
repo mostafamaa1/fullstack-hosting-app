@@ -4,13 +4,15 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "start": "node ./www/server.js",
+    "start": "node server.js",
     "tsc": "npx tsc",
     "dev": "npx ts-node-dev ./src/server",
-    "prod": "npx tsc && node server.js",
+    "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "deploy": "chmod +x bin/deploy.sh && bash bin/deploy.sh",
+    "deploy:local": "npm run build:dev && eb use udagram-api-dev && eb deploy",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "build:dev": "npm install . && npm run clean && tsc && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
