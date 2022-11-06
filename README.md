@@ -49,7 +49,7 @@ npm run api:start
 - [Express](https://expressjs.com/) - Javascript API Framework
 
 ## Documentation
-* Detailed Documentation (Infrastructure, App dependencies, Pipeline process) is provided in ./documentation/README.md
+* Detailed Documentation (Infrastructure, App dependencies, Pipeline process) is provided in ./documentation/
 * Screenshots of the AWS configurations and the CircleCI are provided in ./documentation/screenshots/
 * Architecture Diagrams of the AWS and the Pipeline are provided in ./documentation/diagrams/
 
